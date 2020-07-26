@@ -47,7 +47,7 @@ These are the pages which keep information about File Segments (FSEG). So before
 ## File Segment
 A File Segment is a logical unit which is a collection of Pages and Extents.
 
-purpose:
+As a table grows it will allocate individual pages in each file segment until the fragment array becomes full, and then switch to allocating 1 extent at a time, and eventually to allocating 4 extents at a time.
 
 
 
